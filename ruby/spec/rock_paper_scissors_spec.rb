@@ -20,7 +20,6 @@ describe 'Rock-Paper-Scissors' do
         player1.picks :rock and player2.picks :paper
         expect(game.winner).to be(player2)
       end
-
     end
 
     describe 'paper' do
@@ -34,7 +33,6 @@ describe 'Rock-Paper-Scissors' do
         player1.picks :paper and player2.picks :scissors
         expect(game.winner).to be(player2)
       end
-
     end
 
     describe 'scissors' do
@@ -48,9 +46,7 @@ describe 'Rock-Paper-Scissors' do
         player1.picks :scissors and player2.picks :rock
         expect(game.winner).to be(player2)
       end
-
     end
-
   end
 
   context 'draws' do
@@ -58,18 +54,12 @@ describe 'Rock-Paper-Scissors' do
     describe 'any identical picks' do
 
       it 'should result in no winner' do
-
         draw_game_results = [:rock, :paper, :scissors].map do |x|
           player1.picks x and player2.picks x
           game.winner
         end
-
         expect(draw_game_results).to eq [nil, nil, nil]
-
       end
-
     end
-
   end
-
 end
