@@ -2,7 +2,7 @@
 <html>
 <head>
 		<title>rpsls</title>
-	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
 
 
 </head>	
@@ -10,40 +10,41 @@
 	<div class='choices'>
 		<h1>rock paper scissors lizard spock</h1>
 			<div id="rock">
-				<img src="public/images/rock.png" data-pick="rock" ></img>
+				<img src="/images/rock.png" data-pick="rock" ></img>
 			</div>
 			<div id="paper_spock">
-				<img src="public/images/paper.png" data-pick="paper"></img>
-				<img src="public/images/spock.png" data-pick="spock"></img>
+				<img src="/images/paper.png" data-pick="paper"></img>
+				<img src="/images/spock.png" data-pick="spock"></img>
 			</div>
 			<div id="lizard_scissors">
-				<img src="public/images/lizard.png" data-pick="lizard"></img>
-				<img src="public/images/scissors.png" data-pick="scissors"></img>
+				<img src="/images/lizard.png" data-pick="lizard"></img>
+				<img src="/images/scissors.png" data-pick="scissors"></img>
 			</div>
 	</div>
 	<ul id="results"></ul>
 
-<script src="javascript/lib/game.js"></script>
-<script src="javascript/lib/player.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
-<script>
+	<script src="javascript/lib/game.js"></script>
+	<script src="javascript/lib/player.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
-	$(document).ready(function() {
-		var player1 = new Player('Sarah');
-		var player2 = new Player('Computer');
-		var game = new Game(player1, player2);
+	<script>
 
-	$('.choices img').on('click', function() {
-		player1.picks($(this).data('pick'));
-		player2.picks('paper');
+		$(document).ready(function() {
+			var player1 = new Player('Sarah');
+			var player2 = new Player('Computer');
+			var game = new Game(player1, player2);
 
-	var latestResult = $('<li>' + game.winningMessage() + '</li>');
-		$('#results').prepend(latestResult);
-	});
+		$('.choices img').on('click', function() {
+			player1.picks($(this).data('pick'));
+			player2.picks('paper');
 
-})
+		var latestResult = $('<li>' + game.winningMessage() + '</li>');
+			$('#results').prepend(latestResult);
+		});
 
-</script>
+	})
+
+	</script>
 </body>	
 </html>
