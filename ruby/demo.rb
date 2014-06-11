@@ -1,4 +1,4 @@
-require_relative './lib/rock_paper_scissors'
+require_relative '../lib/rock_paper_scissors'
 
 player1 = Player.new 'Alex'
 player2 = Player.new 'James'
