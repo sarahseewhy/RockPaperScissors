@@ -4,19 +4,17 @@ function Game(player1, player2) {
 }
 
 Game.prototype.PAIRS = {
-  rock:     { beats: ['scissors', 'lizard'], scissors: 'crushes', lizard: 'crushes' }, 
-  paper:    { beats: ['rock', 'spock'], rock: 'covers', spock: 'disproves'},
-  scissors: { beats: ['paper', 'lizard'], paper: 'cuts', lizard: 'decapitates'},
-  lizard: 	{ beats: ['spock', 'paper'], spock: 'poisons', paper: 'eats'},
-  spock: 	  { beats: ['scissors', 'rock'], scissors: 'smashes', rock: 'vaporises'},
+  rock:     { scissors: 'breaks', lizard: 'squashes' }, 
+  paper:    { rock: 'covers', spock: 'disproves' },
+  scissors: { paper: 'cuts', lizard: 'decapitates' },
+  spock: 		{ scissors: 'smashes', rock: 'vaporises' },
+  lizard: 	{ paper: 'eats', spock: 'poisons' }
 }	
 
 Game.prototype.winner = function() {
-  if (this._isSamePick()) {
-    return null;
-  }
+  if (this._isSamePick()) return null;
   
-  if(this.contains(this.PAIRS[this.player1.pick]['beats'], this.player2)) {
+  if(this._victoryVerbFor(this.player1.pick, this.player2.pick)) {
     return this.player1
   }
   else {
