@@ -49,7 +49,7 @@ Game.prototype._isSamePick = function() {
 }
 
 Game.prototype._RandomPick = function() {
-  
+  return this.PAIRS
 }
 
 Array.prototype.contains = function(obj) {
