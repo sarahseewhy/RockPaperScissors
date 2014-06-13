@@ -1,4 +1,4 @@
- function Game(player1, player2) {
+function Game(player1, player2) {
   this.player1 = player1;
   this.player2 = player2;
 }
@@ -21,6 +21,7 @@ Game.prototype.winner = function() {
     return this.player2
   }  
 }
+
 
 Game.prototype.loser = function() {
   return (this.winner() === this.player1 ? this.player2 : this.player1);
@@ -51,9 +52,9 @@ Game.prototype._isSamePick = function() {
 // Game.prototype.contains = function(options, pick) {
 //   var i = options.length;
 //   while (i--) {
-//     if options[i] === pick; {
+//     if (options[i] === pick) {
 //       return true;
 //     }
 //   }
 //   return false;
-// }
+// };
