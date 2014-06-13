@@ -48,11 +48,12 @@ Game.prototype._isSamePick = function() {
   return this.player1.pick === this.player2.pick; 
 }
 
-Game.prototype._RandomPick = function() {
-  return this.PAIRS
-}
-
-Array.prototype.contains = function(obj) {
-  return this.indexOf(obj) > -1
- 
-}
+// Game.prototype.contains = function(options, pick) {
+//   var i = options.length;
+//   while (i--) {
+//     if options[i] === pick; {
+//       return true;
+//     }
+//   }
+//   return false;
+// }

@@ -7,6 +7,12 @@ Player.prototype.picks = function(pick) {
   this.pick = pick;
 };
 
-Player.prototype._RandomPick = function() {
-  return this.PAIRS
+Player.prototype.CHOICES = [
+	'rock', 'paper', 'scissors', 'lizard', 'spock'
+]
+
+Player.prototype.randomPick = function() {
+  return this.CHOICES[Math.floor(Math.random()*(5))]
 }
+
+ 

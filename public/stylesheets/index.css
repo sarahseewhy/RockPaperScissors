@@ -1,5 +1,5 @@
 body {
-	background-color: CBCBD1;
+	background-color: white;
 	font-family: Helvetica, Arial, Sans-serif;
 }
 
@@ -24,7 +24,17 @@ margin: -20px 60px 15px 60px;
 	margin: 0px 15px 25px 15px;
 }
 
-ul {
+#results {
 	list-style: none;
-	text-align: center;
 }
+
+	#results li {
+		background: gray;
+		color: black;
+		font-size: 24px;
+		border-radius: 4px
+		padding: 5px;
+		width: 80%;
+		margin-bottom: 10px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	}
