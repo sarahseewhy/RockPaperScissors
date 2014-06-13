@@ -31,7 +31,7 @@
 	<script>
 
 		$(document).ready(function() {
-			var player1 = new Player('Sarah');
+			var player1 = new Player('Human');
 			var player2 = new Player('Computer');
 			var game = new Game(player1, player2);
 
@@ -40,7 +40,9 @@
 			player2.picks('paper');
 
 		var latestResult = $('<li>' + game.winningMessage() + '</li>');
-			$('#results').prepend(latestResult);
+			latestResult.prependTo('#results').slideDown();
+
+			$('#results li:nth-child(5)').fadeOut();
 		});
 
 	})
