@@ -1,4 +1,4 @@
-function Game(player1, player2) {
+ function Game(player1, player2) {
   this.player1 = player1;
   this.player2 = player2;
 }
@@ -46,6 +46,10 @@ Game.prototype._victoryVerbFor = function(pick, opponentPick) {
 
 Game.prototype._isSamePick = function() {
   return this.player1.pick === this.player2.pick; 
+}
+
+Game.prototype._RandomPick = function() {
+  
 }
 
 Array.prototype.contains = function(obj) {
