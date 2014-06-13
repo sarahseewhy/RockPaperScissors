@@ -9,16 +9,12 @@
 <body>
 	<div class='choices'>
 		<h1>rock paper scissors lizard spock</h1>
-			<div id="rock">
+			<div id="images">
 				<img src="/images/rock.png" data-pick="rock" ></img>
-			</div>
-			<div id="paper_spock">
 				<img src="/images/paper.png" data-pick="paper"></img>
-				<img src="/images/spock.png" data-pick="spock"></img>
-			</div>
-			<div id="lizard_scissors">
-				<img src="/images/lizard.png" data-pick="lizard"></img>
 				<img src="/images/scissors.png" data-pick="scissors"></img>
+				<img src="/images/lizard.png" data-pick="lizard"></img>
+				<img src="/images/spock.png" data-pick="spock"></img>
 			</div>
 	</div>
 	<ul id="results"></ul>
@@ -39,12 +35,13 @@
 			player1.picks($(this).data('pick'));
 			player2.picks('paper');
 
-		var latestResult = $('<li>' + game.winningMessage() + '</li>');
-			latestResult.prependTo('#results').slideDown();
+			var latestResult = $('<li>' + game.winningMessage() + '</li>');
+				latestResult.prependTo('#results').slideDown();
 
-			$('#results li:nth-child(5)').fadeOut();
+			$('#results li:nth-child(5)').fadeOut(function(){
+					$(this).remove();
+			})
 		});
-
 	})
 
 	</script>

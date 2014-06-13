@@ -16,14 +16,6 @@ opacity: 1;
 transition: 0.25s;
 }
 
-#paper_spock img {
-margin: -20px 60px 15px 60px;
-}
-
-#lizard_scissors img {
-	margin: 0px 15px 25px 15px;
-}
-
 #results {
 	list-style: none;
 }
