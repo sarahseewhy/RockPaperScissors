@@ -5,7 +5,7 @@ A [Makers Academy](https://github.com/makersacademy) Week Seven project to creat
 
 ###Specification:
 
-Build an online Rock, Paper, Scissors, Lizard, Spock (RPSLS) game in JavaScript which is played by the computer and a user. There is a **winner**, **loser**, and the ability to **draw**, and the computer's picks are randomised. The game should follow the RPSLS rules:
+Build an online Rock, Paper, Scissors, Lizard, Spock (RPSLS) game in JavaScript which is played by the **computer** and a **user**. There is a **winner**, **loser**, and the ability to **draw**, and the computer's picks are **randomised**. The game should follow the RPSLS rules:
 
 ````
 Scissors cut paper
