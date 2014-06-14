@@ -28,15 +28,9 @@ Game.prototype.loser = function() {
 }
 
 Game.prototype.winningMessage = function() {
-  var message;
-
-  if(this.winner()) {
-    message = [this.winner().name,
+  var message = [this.winner().name,
     this._victoryVerbFor(this.winner().pick, this.loser().pick),
     this.loser().name].join(' ');
-  } else {
-      message = 'Draw';
-  }
 
   return  message
 }
@@ -48,13 +42,3 @@ Game.prototype._victoryVerbFor = function(pick, opponentPick) {
 Game.prototype._isSamePick = function() {
   return this.player1.pick === this.player2.pick; 
 }
-
-// Game.prototype.contains = function(options, pick) {
-//   var i = options.length;
-//   while (i--) {
-//     if (options[i] === pick) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
