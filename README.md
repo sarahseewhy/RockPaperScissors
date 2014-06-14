@@ -23,11 +23,9 @@ Rock crushes scissors
 [RPSLS IMAGE]
 
 ###Technologies:
-* Ruby
-* Rspec
+* Ruby with Rspec
 * Sinatra
-* JavaScript
-* Jasmine
+* JavaScript with Jasmine
 * Jquery
 * HTML
 * CSS
