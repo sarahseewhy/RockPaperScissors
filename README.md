@@ -19,8 +19,6 @@ Spock vaporizes rock
 Rock crushes scissors
 ````
 
-[RPSLS IMAGE]
-
 ###Technologies:
 * Ruby with Rspec
 * Sinatra
