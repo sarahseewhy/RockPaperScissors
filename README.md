@@ -32,5 +32,5 @@ Rock crushes scissors
 
 The game is hosted on Heroku and you can play it here.
 
-[SCREENSHOT 1]
+![alt text](https://github.com/sarahseewhy/RockPaperScissors/blob/master/public/images/rpsls.jpeg)
 
