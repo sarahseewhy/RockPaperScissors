@@ -18,6 +18,10 @@ transition: 0.25s;
 
 #results {
 	list-style: none;
+	position: fixed;
+	width: 50%;
+	top: 40%;
+	left: 21%;
 }
 
 	#results li {
@@ -26,8 +30,6 @@ transition: 0.25s;
 		font-size: 24px;
 		border-radius: 4px;
 		padding: 5px;
-		width: 60%;
-		position: fixed;
 		top: 50%;
 		left: 20%;
 		margin-bottom: 10px;

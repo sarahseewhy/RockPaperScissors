@@ -3,8 +3,6 @@
 <head>
 		<title>rpsls</title>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
-
-
 </head>	
 <body>
 	<div class='choices'>
@@ -31,19 +29,18 @@
 			var player2 = new Player('Computer');
 			var game = new Game(player1, player2);
 
-		$('.choices img').on('click', function() {
-			player1.picks($(this).data('pick'));
-			player2.picks('paper');
+			$('.choices img').on('click', function() {
+				player1.picks($(this).data('pick'));
+				player2.picks(player2.randomPick());
 
-			var latestResult = $('<li>' + game.winningMessage() + '</li>');
-				latestResult.prependTo('#results').slideDown();
+				var latestResult = $('<li>' + game.winningMessage() + '</li>');
+					latestResult.prependTo('#results').slideDown();
 
-			$('#results li:nth-child(5)').fadeOut(function(){
+				$('#results li:nth-child(5)').fadeOut(function(){
 					$(this).remove();
-			})
-		});
-	})
-
+				})
+			});
+		})
 	</script>
 </body>	
 </html>
