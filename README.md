@@ -34,6 +34,3 @@ The game is hosted on Heroku and you can play it here.
 
 [SCREENSHOT 1]
 
-[SCREENSHOT 2]
-
-
