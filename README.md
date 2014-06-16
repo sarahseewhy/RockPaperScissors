@@ -1,5 +1,7 @@
 ##Rock Paper Scissors Lizard Spock
 
+![alt text](https://raw.githubusercontent.com/sarahseewhy/RockPaperScissors/master/public/images/rpsls_title.png "Header")
+
 A [Makers Academy](https://github.com/makersacademy) Week Seven project to create an online version of the game Rock, Paper, Scissors, Lizard, Spock, popularised by the character Sheldon on [The Big Bang Theory](http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock). This assignment was set by [@alexpeattie](https://github.com/alexpeattie).
 
 ###Specification:
