@@ -9,6 +9,8 @@ body {
 
 .choices img {
 opacity: 0.5;
+top: 20%;
+margin-right: 10px;
 }
 
 .choices img:hover {
@@ -18,10 +20,8 @@ transition: 0.25s;
 
 #results {
 	list-style: none;
-	position: fixed;
-	width: 50%;
-	top: 37%;
-	left: 22.5%;
+	width: 60%;
+	margin: auto;
 }
 
 	#results li {
@@ -30,9 +30,9 @@ transition: 0.25s;
 		font-size: 24px;
 		border-radius: 4px;
 		padding: 5px;
-		top: 50%;
-		left: 20%;
+		margin-top: 10px;
 		margin-bottom: 10px;
 		box-shadow: 0 0 5px rgba(0,0,0,0.4);
 		display: none;
+		width: 90%;
 	}
