@@ -3,6 +3,11 @@ body {
 	font-family: Helvetica, Arial, Sans-serif;
 }
 
+#video {
+	margin: auto;
+	width: 400px;
+}
+
 .choices {
 	text-align: center;
 }
