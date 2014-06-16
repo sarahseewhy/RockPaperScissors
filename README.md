@@ -32,7 +32,7 @@ Rock crushes scissors
 
 ###Demonstration:
 
-The game is hosted on Heroku and you can play it here.
+The game is hosted on Heroku and you can play it [here](http://sarahseewhy-rockpaperscissors.herokuapp.com/). Have fun!
 
 ![alt text](https://raw.githubusercontent.com/sarahseewhy/RockPaperScissors/master/public/images/rpsls.png "Screenshot")
 
